@@ -1,8 +1,34 @@
+:root{
+    /* header color */
+    --header-bg: #BB9AB1;
+    --letter-bg: #EECEB9;
+    --letter-font-family: "Indie Flower", cursive;
+    --letter-font-width: 500;
+    --letter-font-style: normal;
+    --letter-font-size: medium;
+}
+
+.principal_font{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: #000;
+}
+
+img{
+    height: 60%;
 }
 
 html{
@@ -14,10 +40,11 @@ body{
 }
 
 header{
+    ;
     border-radius: 11px;
     padding: 25px;
     text-align: center;
-    background-color: #BB9AB1;
+    background-color: var(--header-color);
     box-shadow: 0px 0px 10px #111a;
 }
 
@@ -31,25 +58,48 @@ main{
 section{
     width: 100%;
     margin-bottom: 15%;
+    text-align: center;
+    padding: 3%;
 }
 
 div{
     margin-bottom: 10%;
 }
 
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 3%;
+    position: absolute;
+    bottom: 0;
+}
+
 /* menu section */
 
-#menu{
+.cover{
     text-align: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: var(--letter-bg);
+    border-radius: 5%;
+}
+
+.cover:hover, p{
+    
 }
 
 .letter{
+    display: flex;
+    position: relative;
     padding: 3%;    
-    font-family: "Indie Flower", cursive;
-    font-weight: 500;
-    font-style: normal;
-    font-size:medium;
-    background: #EECEB9;
+    font-family: var(--letter-font-family);
+    font-weight: var(--letter-font-width);
+    font-style: var(--letter-font-style);
+    font-size: var(--letter-font-size);
+    background: var(--letter-bg);
     box-shadow: 0px 0px 50px #111a;
     border-radius: 5%;
 }
